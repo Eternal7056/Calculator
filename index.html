@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            body{
+    text-align:center;
+    background-image: url("https://img.freepik.com/free-vector/abstract-background_53876-43362.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1710115200&semt=ais");
+    background-repeat: no-repeat;
+}
+.add{
+    background-image: url("https://t4.ftcdn.net/jpg/01/26/10/59/360_F_126105961_6vHCTRX2cPOnQTBvx9OSAwRUapYTEmYA.jpg");
+    font-size:25px;
+    height:35px;
+    width:35px;
+    margin-right:5px;
+}
+p{
+    height:20px;
+    width:200px;
+    margin:auto;
+    margin-top:10px;
+    background-image: url("https://t4.ftcdn.net/jpg/01/26/10/59/360_F_126105961_6vHCTRX2cPOnQTBvx9OSAwRUapYTEmYA.jpg");
+    text-align:center;
+}
+        </style>
+        <script>
+            function add(){
+    var input1 = prompt("Enter Number 1: ")
+    var input2 = prompt("Enter Number 2: ")
+    var sum = parseInt(input1)+parseInt(input2)
+    document.getElementById("result").innerHTML = sum
+}
+function subtract(){
+    var input1 = prompt("Enter Number 1: ")
+    var input2 = prompt("Enter Number 2: ")
+    var difference = parseInt(input1)-parseInt(input2)
+    document.getElementById("result").innerHTML = difference
+}
+function multiply(){
+    var input1 = prompt("Enter Number 1: ")
+    var input2 = prompt("Enter Number 2: ")
+    var product = parseInt(input1)*parseInt(input2)
+    document.getElementById("result").innerHTML = product
+}
+function divide(){
+    var input1 = prompt("Enter Number 1: ")
+    var input2 = prompt("Enter Number 2: ")
+    var quotient = parseInt(input1)/parseInt(input2)
+    document.getElementById("result").innerHTML = quotient
+}
+        </script>
+    </head>
+    <body>
+        <h1>CALCULATER</h1>
+        <button class="add" onclick="add()">+</button>
+        <button class="add" onclick="subtract()">-</button>
+        <button class="add" onclick="multiply()">x</button>
+        <button class="add" onclick="divide()">/</button>
+        <p id="result"></p>
+    </html>
+</html>
